@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{fm.as_p}}
+    
+    <!--
+    {% for f in fm %}
+    {{f.label_tag}} {{f}}<br><br>
+    {% endfor %}
+    -->
+
+    <button type="submit">ADD</button>
+</form>
+
+{% endblock content %}

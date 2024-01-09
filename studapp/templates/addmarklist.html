@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <center>
+    Exam Date: <input type="date" name="date"><br><br>
+    Subject 1: <input type="text" name="sub1">
+    Marks 1: <input type="text" name="mark1"> out of 50<br><br>
+    Subject 2: <input type="text" name="sub2">
+    Marks 2: <input type="text" name="mark2"> out of 50<br><br>
+    Subject 3: <input type="text" name="sub3">
+    Marks 3: <input type="text" name="mark3"> out of 50<br><br>
+    Subject 4: <input type="text" name="sub4">
+    Marks 4 <input type="text" name="mark4"> out of 50<br><br>
+    Subject 5: <input type="text" name="sub5">
+    Marks 5: <input type="text" name="mark5"> out of 50<br><br>
+
+    <button type="submit">ADD NEW MARKS</button>
+    </center>
+</form>
+
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+<center><b>LOGIN TO CONTINUE</b></center>
+<br><br>
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            Username:<input type="text" name="username"> <br><br>
+            Password:<input type="password" name="password"><br><br>
+            <center>
+                <input type ="submit" name="submit" value="Login"> <br><br>
+            New Teacher? <a href="{% url 'register' %}">Register</a>
+            </center>
+        </form>
+    </div>
+    {% if messages %}
+    {% for message in messages %}
+     <p>{{message}}</p>
+    {% endfor %}
+   {% endif %}
+</div>
+{% endblock content %}
