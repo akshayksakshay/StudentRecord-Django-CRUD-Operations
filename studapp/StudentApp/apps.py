@@ -8,3 +8,4 @@ class StudentappConfig(AppConfig):
 #git test command
 #git test command2
 #edited from github
+#edited from github 2
