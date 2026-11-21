@@ -6,6 +6,4 @@ class StudentappConfig(AppConfig):
     name = 'StudentApp'
 
 #git test command
-#git test command2
-#git test command3
-#git test command4
+#git test command2 rebase
