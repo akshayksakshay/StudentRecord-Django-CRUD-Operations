@@ -10,3 +10,4 @@ class StudentappConfig(AppConfig):
 #edited from github
 #edited from github 2
 #edited from eclipse
+#new
